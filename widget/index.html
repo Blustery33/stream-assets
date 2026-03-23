@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Matcha Goal Widget</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="widget">
+    <div id="cup-stage">
+      <div id="liquid-clip">
+        <div id="liquid-wrap">
+          <img id="liquid-texture" src="assets/liquid-texture.png" alt="Liquid texture" />
+          <div id="liquid-surface"></div>
+          <div class="sparkle s1"></div>
+          <div class="sparkle s2"></div>
+          <div class="sparkle s3"></div>
+          <div class="sparkle s4"></div>
+        </div>
+      </div>
+
+      <img id="cup-body" src="assets/gobelet.svg" alt="Gobelet" />
+      <img id="cup-reflection" src="assets/reflection.svg" alt="Reflet" />
+      <img id="cup-straw" src="assets/paille.svg" alt="Paille" />
+    </div>
+
+    <div id="goal-text">
+      <div id="goal-title">Follower goal</div>
+      <div id="goal-count">0 / 10</div>
+      <div id="goal-last">Dernier soutien : —</div>
+    </div>
+
+    <div id="debug-panel">
+      <label>
+        Titre
+        <input id="title-input" type="text" value="Follower goal" />
+      </label>
+
+      <label>
+        Progress
+        <input id="progress-input" type="range" min="0" max="10" value="0" />
+      </label>
+
+      <label>
+        Goal
+        <input id="goal-input" type="range" min="1" max="50" value="10" />
+      </label>
+
+      <button id="plus-follow">+1 follow</button>
+      <button id="plus-sub">+1 sub</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
